@@ -1,0 +1,78 @@
+/* Home Section  */
+.home {
+  height: 100vh;
+  background-image: url(../images/background/background1.webp);
+  background-size: cover;
+  position: relative;
+}
+
+.home-content {
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home .title {
+  color: var(--white);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.home .home-desc {
+  color: var(--white);
+  margin-block: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+}
+
+.home .btn-start {
+  margin-inline-end: 10px;
+  background: var(--white);
+}
+
+.home .btn-learn {
+  background: var(--lightBlue);
+  color: var(--white);
+}
+
+/* About Section  */
+.about-content {
+  overflow: hidden;
+}
+
+.about-item {
+  width: 30%;
+  text-align: center;
+  border: 1px solid var(--Whisper);
+  padding: 50px 20px;
+  line-height: 1.7;
+}
+
+.about-item:hover .about-item-title {
+  color: var(--white);
+}
+
+.about-item.mg {
+  margin-inline: 5%;
+}
+
+.about-item i.icon {
+  color: var(--lightBlue);
+}
+
+.about-item-title {
+  text-transform: capitalize;
+  transition: color .5s;
+}
+
+.about-item-desc {
+  color: var(--Nobel);
+}
+
+.about-item-link {
+  color: var(--lightBlue);
+  text-transform: capitalize;
+}

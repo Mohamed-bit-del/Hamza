@@ -1,0 +1,100 @@
+/* Protfolio Section  */
+.portifilio {
+  background: var(--Snow);
+}
+
+.portifilio-content {
+  overflow: hidden;
+}
+
+.portifilio-item {
+  width: 31%;
+  margin-block-end: 3%;
+  position: relative;
+  padding: 20px;
+}
+
+.portifilio-item .layer-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  background: rgba(0, 0, 0, .5);
+}
+
+.portifilio-item:hover .layer-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portifilio-item .layer-content .layer-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  line-height: 1.7;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+
+.portifilio-item .layer-content .layer-info .category {
+  color: var(--lightBlue);
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  /* visibility: hidden; */
+  transition: top .5s, opacity .5s;
+  transition-delay: .2s;
+}
+
+.portifilio-item .layer-content .layer-info .layer-content-title {
+  color: var(--white);
+  font-size: 22px;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  /* visibility: hidden; */
+  transition: top .5s, opacity .5s;
+  transition-delay: .3s;
+}
+
+.portifilio-item .layer-content .layer-info a {
+  color: var(--white);
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  /* visibility: hidden; */
+  transition: top .5s, opacity .5s;
+  transition-delay: .4s;
+}
+
+.portifilio-item .layer-content .layer-info a i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: var(--lightBlue);
+}
+
+.portifilio-item:hover .layer-info .category,
+.portifilio-item:hover .layer-info .layer-content-title,
+.portifilio-item:hover .layer-info a {
+  top: 0;
+  opacity: 1;
+  /* visibility: visible; */
+}
+
+.portifilio-item.mg {
+  margin-inline: 3%;
+}
+
+.portifilio-item img {
+  width: 100%;
+}

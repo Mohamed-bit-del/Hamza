@@ -1,0 +1,62 @@
+/* Servicse Section */
+.servicse {
+  background: var(--Snow);
+}
+
+.servicse-item {
+  width: 50%;
+}
+
+.servicse-item .section-header {
+  text-align: left;
+}
+
+.servicse-item .section-header .line {
+  margin: auto 0 40px 0;
+}
+
+.servicse-item-desc {
+  padding-inline-end: 20px;
+  color: var(--Nobel);
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.servicse-list li {
+  color: var(--Nobel);
+}
+
+.servicse-list li .icon {
+  color: var(--lightBlue);
+  padding: 5px 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--lightBlue);
+}
+
+.servicse-item-image img {
+  width: 100%;
+}
+
+.servicse-bolletts {
+  list-style: none;
+  text-align: center;
+}
+
+.servicse-bolletts li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  display: inline-block;
+  background: var(--Whisper);
+}
+
+.servicse-bolletts li:hover {
+  background: var(--lightBlue);
+}
+
+.servicse-bolletts li.active {
+  background: var(--lightBlue);
+}

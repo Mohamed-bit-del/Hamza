@@ -1,0 +1,79 @@
+/* Contant Section */
+.contant-info {
+  overflow: hidden;
+}
+
+.contant-item {
+  width: 30%;
+  text-align: center;
+}
+
+.contant-item.m-g {
+  margin-inline: 3%;
+}
+
+.contant-item i {
+  font-size: 25px;
+  color: var(--lightBlue);
+}
+
+.contant-title {
+  margin-block: 15px;
+}
+
+.contant-desc {
+  color: var(--Nobel);
+}
+
+form {
+  margin: 50px auto;
+  width: 70%;
+}
+
+.row-form {
+  overflow: hidden;
+}
+
+.form-groub {
+  margin-block: 5px;
+}
+
+.row-form .form-groub {
+  width: 49%;
+}
+
+.row-form .form-groub.m-g {
+  margin-inline-end: 2%;
+}
+
+.form-groub input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  background: var(--Whisper);
+}
+
+.row-form .form-groub input:focus {
+  border: 2px solid var(--lightBlue);
+  border-bottom-width: 4px;
+}
+
+.textarea {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  background: var(--Whisper);
+  margin-block: 5px;
+}
+
+.btn-form {
+  color: var(--white);
+  background: var(--lightBlue);
+  display: block;
+  margin: auto;
+  margin-block-start: 10px;
+}

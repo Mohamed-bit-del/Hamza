@@ -1,0 +1,165 @@
+/* 
+  1 - Common Styles
+  2 - Ganeral Styles
+  3 - Section Styles
+      3.1 - Home Section
+      3.2 - About Section
+      3.3 - Protfolio Section
+      3.4 - Services Section
+      3.5 - Prices Section
+      3.6 - Team Section
+      3.7 - Blog Section
+      3.8 - Contact Section
+      3.9 - Footer Section
+
+*/
+
+/*   1 - Common Styles */
+
+/* 
+    -overlay
+    -opacity hover
+    -section header
+    -section padding
+    -hover offect 1 ( left to right)
+    -hover offect 2 ( top to bottom)
+*/
+
+.btn {
+  border: 0;
+  min-width: 160px;
+  border-radius: 5px;
+  padding-block: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5)
+}
+
+.hover-opacity {
+  transition: opacity .5s;
+}
+
+.hover-opacity:hover {
+  opacity: .8;
+}
+
+.ltr-effect,
+.tb-effect {
+  position: relative;
+}
+
+.ltr-effect::after,
+.tb-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  z-index: -1;
+  transition: width .5s;
+}
+
+.ltr-effect::after {
+  width: 0;
+}
+
+.ltr-effect:hover::after {
+  width: 100%;
+}
+
+.tb-effect::after {
+  height: 0;
+  transition: height .5s;
+}
+
+.tb-effect:hover::after {
+  height: 100%;
+}
+
+
+
+/* 2 - Ganeral Styles */
+/* Ganeral Css Style */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Nero: #222;
+  --white: #FFF;
+  --Nobel: #999;
+  --Whisper: #EEE;
+  --Snow: #F9F9F9;
+  --Whisper: #E8E8E8;
+  --lightBlue: #6195ff;
+  --BlackRussian: #1C1D21;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+.clear {
+  clear: both
+}
+
+section {
+  padding-block: 120px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header .section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 0 auto 70px auto;
+  background: var(--lightBlue);
+}
+
+/* 3 - Section Styles */

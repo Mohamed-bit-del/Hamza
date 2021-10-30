@@ -1,0 +1,30 @@
+/* Footer Section */
+.footer {
+  background: var(--BlackRussian);
+  text-align: center;
+}
+
+.footer-links li {
+  margin-block: 20px;
+  display: inline-block;
+}
+
+.footer-links li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-inline: 5px;
+  color: var(--white);
+  background: var(--lightBlue);
+}
+
+.footer-links li a i {
+  line-height: 50px;
+}
+
+.copy-right {
+  color: var(--Nobel);
+  margin-block-start: 10px;
+  text-transform: uppercase;
+}
